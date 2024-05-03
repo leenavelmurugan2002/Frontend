@@ -1,3 +1,3 @@
 $(".btn").click(function(){
-    $(".msg").toggle()
+    $(".msg").hide()
 })
