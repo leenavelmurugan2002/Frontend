@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .static{
+                 position: sticky;
+                 top: 10px;
+                 background-color: blue;
+                 width: 1500px;
+                 display: flex;
+        }
+        navigation{
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="static">
+        <navigation>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>mango</li>
+                <li>Banana</li>
+            </ul>
+        </navigation>    
+    </div>
+    <p>
+        Milestone 1: Define Problem / Problem Understanding
+        ● Activity 1: Specify the business problem
+        Refer Project Description
+        ● Activity 2: Business requirements
+        The business requirements for a project aimed at "Identifying Patterns and
+        Trends in Campus Placement Data using Machine Learning" would likely
+        include the following:
+        ❖ Access to campus placement data: The project would require
+        access to data on student performance, qualifications, and job
+        placement outcomes. This data would need to be collected,
+        cleaned, and prepared for analysis.
+        ❖ Machine learning expertise: The project would require
+        individuals with expertise in machine learning, data science and
+        statistical analysis to develop and implement the algorithms and
+        models needed to analyze the data.
+        ❖ Data storage and management: The project would require a
+        robust and secure data storage and management system to store
+        and organize the large amounts of data used in the analysis.
+        ❖ Infrastructure for model deployment: The project would require
+        infrastructure for deploying the models and algorithms
+        developed, including hardware, software, and cloud-based
+        resources.
+        ● Activity 3: Literature Survey (Student Will Write)
+        ❖ There have been several studies that have used machine learning
+        techniques to identify patterns and trends in campus placement
+        data.
+        ❖ One study by authors P. K. Rajesh and Dr. G. R. Suresh,
+        published in the International Journal of Computer Science and
+        Mobile Computing in 2015, used k-means clustering and decision
+        trees to analyze campus placement data and identify patterns that
+        could be used to predict placement outcomes.
+        ❖ Another study by authors V.V. Kulkarni and K.S. Patil, published
+        in the International Journal of Engineering Research and
+        Technology in 2012, used decision tree and neural network
+        algorithms to analyze campus placement data and identify factors
+        that influence student placement.
+        ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+        published in the International Journal of Emerging Research in
+        Management & Technology in 2013, used decision tree and
+        Naive Bayes algorithms to analyze campus placement data and
+        predict student placement outcomes.
+        ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+        published in the International Journal of Emerging Research in
+        Management & Technology in 2013, used decision tree and
+        Naive Bayes algorithms to analyze campus placement data and
+        predict student placement outcomes.
+        ❖ In general, these studies found that machine learning techniques
+        were effective at identifying patterns and trends in campus
+        placement data, and could be used to predict student placement
+        outcomes with high accuracy.
+        ❖ It's important to note that all these studies are quite old now and
+        you might find more recent studies and new techniques which
+        can be useful for your project.
+        ● Activity 4: Social or Business Impact.
+        ❖ The business impact of a project that uses machine learning to
+        identify patterns and trends in campus placement data could be
+        significant. By analyzing data on factors such as student
+        performance, qualifications, and job placement outcomes, the
+        project could help organizations make more informed decisions
+        about recruiting and hiring new graduates.
+        Milestone 2: Data Collection & Preparation
+        ML depends heavily on data. It is the most crucial aspect that makes
+        algorithm training possible. So this section allows you to download the
+        required dataset.
+        ● Activity 1: Collect the dataset
+        There are many popular open sources for collecting the data. Eg:
+        kaggle.com, UCI repository, etc. In this project we have used .csv data.
+        This data is downloaded from kaggle.com. Please refer to the link
+        given below to download the dataset.
+            Milestone 1: Define Problem / Problem Understanding
+            ● Activity 1: Specify the business problem
+            Refer Project Description
+            ● Activity 2: Business requirements
+            The business requirements for a project aimed at "Identifying Patterns and
+            Trends in Campus Placement Data using Machine Learning" would likely
+            include the following:
+            ❖ Access to campus placement data: The project would require
+            access to data on student performance, qualifications, and job
+            placement outcomes. This data would need to be collected,
+            cleaned, and prepared for analysis.
+            ❖ Machine learning expertise: The project would require
+            individuals with expertise in machine learning, data science and
+            statistical analysis to develop and implement the algorithms and
+            models needed to analyze the data.
+            ❖ Data storage and management: The project would require a
+            robust and secure data storage and management system to store
+            and organize the large amounts of data used in the analysis.
+            ❖ Infrastructure for model deployment: The project would require
+            infrastructure for deploying the models and algorithms
+            developed, including hardware, software, and cloud-based
+            resources.
+            ● Activity 3: Literature Survey (Student Will Write)
+            ❖ There have been several studies that have used machine learning
+            techniques to identify patterns and trends in campus placement
+            data.
+            ❖ One study by authors P. K. Rajesh and Dr. G. R. Suresh,
+            published in the International Journal of Computer Science and
+            Mobile Computing in 2015, used k-means clustering and decision
+            trees to analyze campus placement data and identify patterns that
+            could be used to predict placement outcomes.
+            ❖ Another study by authors V.V. Kulkarni and K.S. Patil, published
+            in the International Journal of Engineering Research and
+            Technology in 2012, used decision tree and neural network
+            algorithms to analyze campus placement data and identify factors
+            that influence student placement.
+            ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+            published in the International Journal of Emerging Research in
+            Management & Technology in 2013, used decision tree and
+            Naive Bayes algorithms to analyze campus placement data and
+            predict student placement outcomes.
+            ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+            published in the International Journal of Emerging Research in
+            Management & Technology in 2013, used decision tree and
+            Naive Bayes algorithms to analyze campus placement data and
+            predict student placement outcomes.
+            ❖ In general, these studies found that machine learning techniques
+            were effective at identifying patterns and trends in campus
+            placement data, and could be used to predict student placement
+            outcomes with high accuracy.
+            ❖ It's important to note that all these studies are quite old now and
+            you might find more recent studies and new techniques which
+            can be useful for your project.
+            ● Activity 4: Social or Business Impact.
+            ❖ The business impact of a project that uses machine learning to
+            identify patterns and trends in campus placement data could be
+            significant. By analyzing data on factors such as student
+            performance, qualifications, and job placement outcomes, the
+            project could help organizations make more informed decisions
+            about recruiting and hiring new graduates.
+            Milestone 2: Data Collection & Preparation
+            ML depends heavily on data. It is the most crucial aspect that makes
+            algorithm training possible. So this section allows you to download the
+            required dataset.
+            ● Activity 1: Collect the dataset
+            There are many popular open sources for collecting the data. Eg:
+            kaggle.com, UCI repository, etc. In this project we have used .csv data.
+            This data is downloaded from kaggle.com. Please refer to the link
+            given below to download the dataset.
+                Milestone 1: Define Problem / Problem Understanding
+                ● Activity 1: Specify the business problem
+                Refer Project Description
+                ● Activity 2: Business requirements
+                The business requirements for a project aimed at "Identifying Patterns and
+                Trends in Campus Placement Data using Machine Learning" would likely
+                include the following:
+                ❖ Access to campus placement data: The project would require
+                access to data on student performance, qualifications, and job
+                placement outcomes. This data would need to be collected,
+                cleaned, and prepared for analysis.
+                ❖ Machine learning expertise: The project would require
+                individuals with expertise in machine learning, data science and
+                statistical analysis to develop and implement the algorithms and
+                models needed to analyze the data.
+                ❖ Data storage and management: The project would require a
+                robust and secure data storage and management system to store
+                and organize the large amounts of data used in the analysis.
+                ❖ Infrastructure for model deployment: The project would require
+                infrastructure for deploying the models and algorithms
+                developed, including hardware, software, and cloud-based
+                resources.
+                ● Activity 3: Literature Survey (Student Will Write)
+                ❖ There have been several studies that have used machine learning
+                techniques to identify patterns and trends in campus placement
+                data.
+                ❖ One study by authors P. K. Rajesh and Dr. G. R. Suresh,
+                published in the International Journal of Computer Science and
+                Mobile Computing in 2015, used k-means clustering and decision
+                trees to analyze campus placement data and identify patterns that
+                could be used to predict placement outcomes.
+                ❖ Another study by authors V.V. Kulkarni and K.S. Patil, published
+                in the International Journal of Engineering Research and
+                Technology in 2012, used decision tree and neural network
+                algorithms to analyze campus placement data and identify factors
+                that influence student placement.
+                ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+                published in the International Journal of Emerging Research in
+                Management & Technology in 2013, used decision tree and
+                Naive Bayes algorithms to analyze campus placement data and
+                predict student placement outcomes.
+                ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+                published in the International Journal of Emerging Research in
+                Management & Technology in 2013, used decision tree and
+                Naive Bayes algorithms to analyze campus placement data and
+                predict student placement outcomes.
+                ❖ In general, these studies found that machine learning techniques
+                were effective at identifying patterns and trends in campus
+                placement data, and could be used to predict student placement
+                outcomes with high accuracy.
+                ❖ It's important to note that all these studies are quite old now and
+                you might find more recent studies and new techniques which
+                can be useful for your project.
+                ● Activity 4: Social or Business Impact.
+                ❖ The business impact of a project that uses machine learning to
+                identify patterns and trends in campus placement data could be
+                significant. By analyzing data on factors such as student
+                performance, qualifications, and job placement outcomes, the
+                project could help organizations make more informed decisions
+                about recruiting and hiring new graduates.
+                Milestone 2: Data Collection & Preparation
+                ML depends heavily on data. It is the most crucial aspect that makes
+                algorithm training possible. So this section allows you to download the
+                required dataset.
+                ● Activity 1: Collect the dataset
+                There are many popular open sources for collecting the data. Eg:
+                kaggle.com, UCI repository, etc. In this project we have used .csv data.
+                This data is downloaded from kaggle.com. Please refer to the link
+                given below to download the dataset.
+                    Milestone 1: Define Problem / Problem Understanding
+                    ● Activity 1: Specify the business problem
+                    Refer Project Description
+                    ● Activity 2: Business requirements
+                    The business requirements for a project aimed at "Identifying Patterns and
+                    Trends in Campus Placement Data using Machine Learning" would likely
+                    include the following:
+                    ❖ Access to campus placement data: The project would require
+                    access to data on student performance, qualifications, and job
+                    placement outcomes. This data would need to be collected,
+                    cleaned, and prepared for analysis.
+                    ❖ Machine learning expertise: The project would require
+                    individuals with expertise in machine learning, data science and
+                    statistical analysis to develop and implement the algorithms and
+                    models needed to analyze the data.
+                    ❖ Data storage and management: The project would require a
+                    robust and secure data storage and management system to store
+                    and organize the large amounts of data used in the analysis.
+                    ❖ Infrastructure for model deployment: The project would require
+                    infrastructure for deploying the models and algorithms
+                    developed, including hardware, software, and cloud-based
+                    resources.
+                    ● Activity 3: Literature Survey (Student Will Write)
+                    ❖ There have been several studies that have used machine learning
+                    techniques to identify patterns and trends in campus placement
+                    data.
+                    ❖ One study by authors P. K. Rajesh and Dr. G. R. Suresh,
+                    published in the International Journal of Computer Science and
+                    Mobile Computing in 2015, used k-means clustering and decision
+                    trees to analyze campus placement data and identify patterns that
+                    could be used to predict placement outcomes.
+                    ❖ Another study by authors V.V. Kulkarni and K.S. Patil, published
+                    in the International Journal of Engineering Research and
+                    Technology in 2012, used decision tree and neural network
+                    algorithms to analyze campus placement data and identify factors
+                    that influence student placement.
+                    ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+                    published in the International Journal of Emerging Research in
+                    Management & Technology in 2013, used decision tree and
+                    Naive Bayes algorithms to analyze campus placement data and
+                    predict student placement outcomes.
+                    ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+                    published in the International Journal of Emerging Research in
+                    Management & Technology in 2013, used decision tree and
+                    Naive Bayes algorithms to analyze campus placement data and
+                    predict student placement outcomes.
+                    ❖ In general, these studies found that machine learning techniques
+                    were effective at identifying patterns and trends in campus
+                    placement data, and could be used to predict student placement
+                    outcomes with high accuracy.
+                    ❖ It's important to note that all these studies are quite old now and
+                    you might find more recent studies and new techniques which
+                    can be useful for your project.
+                    ● Activity 4: Social or Business Impact.
+                    ❖ The business impact of a project that uses machine learning to
+                    identify patterns and trends in campus placement data could be
+                    significant. By analyzing data on factors such as student
+                    performance, qualifications, and job placement outcomes, the
+                    project could help organizations make more informed decisions
+                    about recruiting and hiring new graduates.
+                    Milestone 2: Data Collection & Preparation
+                    ML depends heavily on data. It is the most crucial aspect that makes
+                    algorithm training possible. So this section allows you to download the
+                    required dataset.
+                    ● Activity 1: Collect the dataset
+                    There are many popular open sources for collecting the data. Eg:
+                    kaggle.com, UCI repository, etc. In this project we have used .csv data.
+                    This data is downloaded from kaggle.com. Please refer to the link
+                    given below to download the dataset.
+                        Milestone 1: Define Problem / Problem Understanding
+                        ● Activity 1: Specify the business problem
+                        Refer Project Description
+                        ● Activity 2: Business requirements
+                        The business requirements for a project aimed at "Identifying Patterns and
+                        Trends in Campus Placement Data using Machine Learning" would likely
+                        include the following:
+                        ❖ Access to campus placement data: The project would require
+                        access to data on student performance, qualifications, and job
+                        placement outcomes. This data would need to be collected,
+                        cleaned, and prepared for analysis.
+                        ❖ Machine learning expertise: The project would require
+                        individuals with expertise in machine learning, data science and
+                        statistical analysis to develop and implement the algorithms and
+                        models needed to analyze the data.
+                        ❖ Data storage and management: The project would require a
+                        robust and secure data storage and management system to store
+                        and organize the large amounts of data used in the analysis.
+                        ❖ Infrastructure for model deployment: The project would require
+                        infrastructure for deploying the models and algorithms
+                        developed, including hardware, software, and cloud-based
+                        resources.
+                        ● Activity 3: Literature Survey (Student Will Write)
+                        ❖ There have been several studies that have used machine learning
+                        techniques to identify patterns and trends in campus placement
+                        data.
+                        ❖ One study by authors P. K. Rajesh and Dr. G. R. Suresh,
+                        published in the International Journal of Computer Science and
+                        Mobile Computing in 2015, used k-means clustering and decision
+                        trees to analyze campus placement data and identify patterns that
+                        could be used to predict placement outcomes.
+                        ❖ Another study by authors V.V. Kulkarni and K.S. Patil, published
+                        in the International Journal of Engineering Research and
+                        Technology in 2012, used decision tree and neural network
+                        algorithms to analyze campus placement data and identify factors
+                        that influence student placement.
+                        ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+                        published in the International Journal of Emerging Research in
+                        Management & Technology in 2013, used decision tree and
+                        Naive Bayes algorithms to analyze campus placement data and
+                        predict student placement outcomes.
+                        ❖ A study by authors S.S. Bhosale, S.S. Raut, and D.S. Kulkarni,
+                        published in the International Journal of Emerging Research in
+                        Management & Technology in 2013, used decision tree and
+                        Naive Bayes algorithms to analyze campus placement data and
+                        predict student placement outcomes.
+                        ❖ In general, these studies found that machine learning techniques
+                        were effective at identifying patterns and trends in campus
+                        placement data, and could be used to predict student placement
+                        outcomes with high accuracy.
+                        ❖ It's important to note that all these studies are quite old now and
+                        you might find more recent studies and new techniques which
+                        can be useful for your project.
+                        ● Activity 4: Social or Business Impact.
+                        ❖ The business impact of a project that uses machine learning to
+                        identify patterns and trends in campus placement data could be
+                        significant. By analyzing data on factors such as student
+                        performance, qualifications, and job placement outcomes, the
+                        project could help organizations make more informed decisions
+                        about recruiting and hiring new graduates.
+                        Milestone 2: Data Collection & Preparation
+                        ML depends heavily on data. It is the most crucial aspect that makes
+                        algorithm training possible. So this section allows you to download the
+                        required dataset.
+                        ● Activity 1: Collect the dataset
+                        There are many popular open sources for collecting the data. Eg:
+                        kaggle.com, UCI repository, etc. In this project we have used .csv data.
+                        This data is downloaded from kaggle.com. Please refer to the link
+                        given below to download the dataset.
+    </p>
+</body>
+</html>
