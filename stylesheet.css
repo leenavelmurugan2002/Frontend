@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('books.jpg')1500px;
+    background: url('./Images/books.jpg')1500px;
     background-size: cover;
     background-position: center;
 }
