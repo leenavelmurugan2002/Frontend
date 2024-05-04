@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
     scroll-padding-top: 2rem;
     list-style: none;
     text-decoration: none;
+    background-color: black;
   }
   
   #darkmode {
@@ -25,7 +27,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 18px 100px;
-    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1); */
   }
   .logo {
     font-size: 1.2rem;
@@ -33,41 +35,30 @@
     color: palevioletred;
     font-family: "Great Vibes", cursive;
     font-size: 50px;
+    cursor: default;
   }
   .navbar {
     display: flex;
   }
   .navbar a {
-    font-size: 1rem;
-    padding: 10px 20px;
-    color: var(--text-color);
-    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 10px 20px; 
+    color: palevioletred;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
   }
   .navbar a:hover {
-    color: var(--main-color);
+     color: aqua;
   }
-  #menu-icon {
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
+  .heading h1{
+    color: black;
+    margin: 250px 300px 300px 200px;
+    font-family: "Honk", system-ui;
+    font-size: 55px;
   }
-  .home {
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+  .heading img{
+    margin-left: 500px;
   }
+
   
-  .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    align-items: center;
-  }
-  
-  .heading {
-    text-align: center;
-  }
   
