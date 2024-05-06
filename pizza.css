@@ -10,7 +10,7 @@
     scroll-padding-top: 2rem;
     list-style: none;
     text-decoration: none;
-    background-color: black;
+    /* background-color: black; */
   }
   
   #darkmode {
@@ -27,7 +27,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 18px 100px;
-    /* box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1); */
   }
   .logo {
     font-size: 1.2rem;
@@ -52,7 +51,7 @@
   }
   .heading h1{
     color: black;
-    margin: 250px 300px 300px 200px;
+    margin: 300px 900px 0px 150px;
     font-family: "Honk", system-ui;
     font-size: 55px;
   }
