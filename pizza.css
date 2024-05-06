@@ -49,8 +49,7 @@
   .navbar a:hover {
      color: aqua;
   }
-  .heading h1{
-    color: black;
+  .heading h1{ 
     margin: 300px 900px 0px 150px;
     font-family: "Honk", system-ui;
     font-size: 55px;
