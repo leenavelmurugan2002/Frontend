@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 
 * {
     margin: 0;
@@ -7,14 +8,12 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box; 
     list-style: none;
-    text-decoration: none;
-    /* background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)); */
-    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)); */
+    text-decoration: none;  
   }
-  body img{
-         width: 1340px;
-         height: 710px;
-  }
+  body{ 
+       /* background-color: black;*/
+       
+      }
   header {
     position: fixed;
     width: 100%;
@@ -62,31 +61,93 @@
     font-family: "Great Vibes", cursive;
     border-color: violet;
     font-weight: 20px;
+    transition: 2s;
   }
   button:hover{
     background-color: white;
     color: black;
   }
-  .heading h1{  
-    margin: 250px 900px 0px 150px;
-    font-family: "Honk", system-ui;
-    font-size: 55px;
+  .title{
+    background: url("./Images/Food\ bg2.jpg");
+         background-size: cover;
+         background-position: center;
+         /* height: 100vh; */
   }
-  .heading img{
-    position: absolute;
-    top: 20%;
-    left: 0px;
-    margin-left: 50%;
-    height: 500px;
-    width: 650px;
+  .title h1{
+        
+        /* margin: 250px 800px 0px 250px; */
+        padding-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        color: yellow;
+        font-family: "Sedan SC", serif;
+        font-weight: 800;
+        font-size: 40px;
   }
-  .heading p{
-    font-family: sans-serif;
-    font-size: 30px;
-    margin-left: 150px;
-    margin-top: 70px;
-    color: aquamarine;
+  .title h1:hover{
+    color: white;
   }
-  
-  
-  
+  .title button{
+    margin-left: 380px;
+    margin-top: 10px;
+    background-color: red;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 40px;
+  }
+  .title button:hover{
+    background-color: azure;
+    color: purple;
+  }
+  .About{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./Images/Restuarant.jpg");
+    height: 750px;
+    margin: 100px 0px;
+    background-size: cover;
+  }
+  .About h1{
+    color: white;
+    display: flex;
+    margin-left: 500px;
+    padding-top: 50px;
+    font-size: 35px;
+  }
+  label{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    margin: 0px 550px;
+  }
+  .About p{
+    /* background: none; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+  }
+  .About img{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.About form{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About form h2{
+  margin-top: 2px;
+}
