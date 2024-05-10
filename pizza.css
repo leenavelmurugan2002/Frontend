@@ -61,7 +61,7 @@
     font-family: "Great Vibes", cursive;
     border-color: violet;
     font-weight: 20px;
-    transition: 2s;
+    /* transition: 2s; */
   }
   button:hover{
     background-color: white;
@@ -69,13 +69,11 @@
   }
   .title{
     background: url("./Images/Food\ bg2.jpg");
-         background-size: cover;
-         background-position: center;
-         /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    
   }
   .title h1{
-        
-        /* margin: 250px 800px 0px 250px; */
         padding-left: 100px;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -132,13 +130,16 @@
     margin-top: 30px;
   }
   .About img{
-    margin-left: 50px;
-    margin-bottom: 10px;
-}
-.About form{
     position: relative;
-    width: 400px;
-    height: 440px;
+    bottom: 150px;
+    left: 50px;
+    margin-left: 500px;
+  }
+ .About form{
+    position: relative;
+    top: 150px;
+    width: 300px;
+    height: 300px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -147,7 +148,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.About form h2{
-  margin-top: 2px;
-}
+    margin-left: 150px;
+  }
+  .About form p{
+    margin-left: 10px;
+  }
