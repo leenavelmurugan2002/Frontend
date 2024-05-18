@@ -113,7 +113,7 @@
   label{
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
     color: red;
     padding: 10px 20px;
     margin: 0px 550px;
@@ -230,21 +230,36 @@
     height: 600px;
     border: 5px solid rgba(128, 27, 27, 0.5);
     border-radius: 30px;
-    display: flex;
     justify-content: center; 
-    padding-top: 3px;
     margin-left: 150px;
   }
   .Reservation h2{
     color: #ffff;
     font-family: "Sedan SC", serif;
-    padding-top: 50px;
+    margin: 50px 100px 0px;
   }
   .Reservation input{
     height: 40px;
-    width: 100%;
-    position: relative;
-    top: 180px;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: #ffff;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  .Reservation button{
+    margin-left: 130px;
+    margin-top: 20px;
+    border-color: darkcyan;
+    color: yellow;
+    background-color: rgba(235, 12, 12, 0.5);
+  }
+  .Reservation button:hover{
+    background-color: white;
+    color: black;
   }
   .Contact p{
     color: #ffff;

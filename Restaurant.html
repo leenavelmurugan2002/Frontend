@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
-    <link rel="stylesheet" href="./pizza.css">
+    <title>Temple City</title>
+    <link rel="stylesheet" href="Restaurant.css">
 </head>
 <body>
    <!-- Navbar -->
@@ -18,17 +18,17 @@
         <li><a href="#menu"><b>Menu</b></a></li>
         <li><a href="#contact"><b>Contact</b></a></li>
     </ul>
-    <button>Book A Table</button>
+    <button><a href="#booktable">Book A Table</a></button>
 </header>
 
     <!--Home-->
-    <div class="title">
+    <div class="title" id="home">
         <h1>We Take Pride In Our Food</h1>
         <button>Menu</button>
     </div>
 
     <!--About-->
-    <div class="About">
+    <div class="About"  id="about">
         <label><b>Home > About Us</b></label>
         <h1>Why To Choose Us?</h1>
         <form>
@@ -44,7 +44,7 @@
         <img src="./Images/Chef2.jpg" alt="" height="300" width="300">
     </div>
     <!-- Menu -->
-    <div class="menu">
+    <div class="menu" id="menu">
         <label><b>Menu</b></label>
         <h1>Our Restuarant Food Menus</h1>
         <label class="submenu">Breakfast</label>
@@ -73,10 +73,17 @@
         <form>
             <h2>Book Your Table</h2>
             <input type="text" placeholder="Enter your name">
+            <input type="number" placeholder="Phone Number">
+            <input type="mail" placeholder="Enter your mail id">
+            <input type="number" placeholder="Number of guests">
+            <!-- <label>Date</label> -->
+            <input type="date">
+            <input type="time">
+            <button id="booktable">Book Table</button>
         </form>
     </div>
     <!-- Contact -->
-    <div class="Contact">
+    <div class="Contact" id="contact">
         <label>Contact</label>
         <p><b>Location : 159/c1, Teppakulam W St, corner, Kamarajar Salai, Madurai, Tamil Nadu - 625009<br><br><br>
             Closing Time: 11:30 PM<br><br><br>
