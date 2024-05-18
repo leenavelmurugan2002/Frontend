@@ -113,10 +113,14 @@
   label{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     color: red;
     padding: 10px 20px;
     margin: 0px 550px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
   }
   .About p{
     font-family: 'Times New Roman', Times, serif;
@@ -192,14 +196,11 @@
     text-align: center;
     padding-top: 30px;
   }
-  .menu label{
-    display: flex;
-    justify-content: center;
-    background: transparent;
-    border-color: white;
-    border-radius: 30px;
-    color: red;
-    padding: 5px 20px;
+  .menu .submenu{
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
   }
   .menu img{
     margin-left: 100px;
