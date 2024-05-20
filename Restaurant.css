@@ -248,8 +248,8 @@
     margin-top: 30px;
     padding-left: 15px;
     border-radius: 10px;
-    background-color: black;
-    color: #ffff;
+    background-color: white;
+    color: black;
     font-size: 16px;
     opacity: 0.5;
   }
@@ -259,6 +259,7 @@
     border-color: darkcyan;
     color: yellow;
     background-color: rgba(235, 12, 12, 0.5);
+    font-family: "Great Vibes", cursive;
   }
   .Reservation button:hover{
     background-color: white;
