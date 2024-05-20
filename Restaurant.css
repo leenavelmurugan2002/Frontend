@@ -64,7 +64,7 @@
     background-color: #ffff;
   }
   .title{
-    background: url("./Images/Food\ bg2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, .5)),url("./Images/Food\ bg2.jpg");
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -81,9 +81,6 @@
         font-family: "Sedan SC", serif;
         font-weight: 800;
         font-size: 40px;
-  }
-  .title h1:hover{
-    color: white;
   }
   .title button{
     position: relative;
