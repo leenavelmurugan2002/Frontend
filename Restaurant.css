@@ -48,19 +48,20 @@
   }
   button{
     font-size: 25px;
-    color: aqua;
     margin: 5px 10px 10px 20px;
     padding: 10px 10px 10px 10px;
     cursor: pointer;
     background-color: transparent;
     border-radius: 10px;
-    font-family: "Great Vibes", cursive;
     border-color: violet;
     font-weight: 20px;
   }
+  button a{
+    font-family: "Great Vibes", cursive;
+    color: aqua;
+  }
   button:hover{
-    background-color: white;
-    color: black;
+    background-color: #ffff;
   }
   .title{
     background: url("./Images/Food\ bg2.jpg");
@@ -201,6 +202,8 @@
     font-weight: bold;
     font-size: 20px;
     border: none;
+    width: 100px;
+    margin: 0px 600px;
   }
   .menu img{
     margin-left: 100px;
