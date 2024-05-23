@@ -4,15 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple City</title>
-    <link rel="stylesheet" href="Restaurant.css">
+  <!----------------------Favicon---------------------------->
+    <link rel="destination icon" href="./Images/plane.png">
+  <!----------------------Remixicons------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <!-----------------------CSS------------------------------->
+    <link rel="stylesheet" href="./Restaurant.css">
+    
 </head>
 <body>
-   <!-- Navbar -->
-   <header>
-    <a href="#" class="logo">Temple City</a>
-    
-    <ul class="navbar">
+   <!------------------- Header ---------------------------------------->
+  <header class="header" id="header"></header>
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Travel</a>
+    </nav> 
+  <div class="nav__menu" id="nav__menu">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#home" class="nav__link">Home</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#about" class="nav__link">About</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#popular" class="nav__link">Popular</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#explore" class="nav__link">Explore</a>
+      </li>
+    </ul>
+<!------------------Close button---------------------------------->
+    <div class="nav__close" id="nav__close">
+      <i class="ri-close-line"></i>
+    </div>
+  </div>
+
+<!------------------Toggle button---------------------------------->
+   <div class="nav__toggle" id="nav__toggle">
+    <i class="ri-menu-fill"></i>
+   </div>
+   
+   
+  
+   
+   <!--------------------Main------------------------------------------->
+    <main class="main">
+   <!--------------------Home------------------------------------------->
+     <section class="home_section" id="home"></section>
+   <!--------------------About------------------------------------------>
+     <section class="about_section" id="about"></section>
+   <!--------------------Popular---------------------------------------->  
+     <section class="popular_section" id="popular"></section>
+   <!--------------------Explore----------------------------------------> 
+     <section class="explore_section" id="explore"></section>
+   <!--------------------Join-------------------------------------------> 
+     <section class="join_section"></section>
+    </main>
+
+    <!-------------------Footer----------------------------------------->
+    <footer class="footer"></footer>
+    <!-------------------Scrollup--------------------------------------->
+    <!-------------------Scrollreveal----------------------------------->
+    <script scr></script>
+
+
+
+
+
+
+    <!-- <ul class="navbar">
         <li><a href="#home"><b>Home</b></a></li>
         <li><a href="#about"><b>About</b></a></li>
         <li><a href="#menu"><b>Menu</b></a></li>
@@ -21,14 +84,14 @@
     <button><a href="#booktable">Book A Table</a></button>
 </header>
 
-    <!--Home-->
-    <div class="title" id="home">
+    <!- Home -->
+    <!-- <div class="title" id="home">
         <h1>We Take Pride In Our Food</h1>
         <button>Menu</button>
-    </div>
+    </div> -->
 
     <!--About-->
-    <div class="About"  id="about">
+    <!-- <div class="About"  id="about">
         <label><b>Home > About Us</b></label>
         <h1>Why To Choose Us?</h1>
         <form>
@@ -42,53 +105,162 @@
             <li><b>Online Delivery Facility</b></li>
         </ul>
         <img src="./Images/Chef2.jpg" alt="" height="300" width="300">
-    </div>
+    </div> -->
+
     <!-- Menu -->
-    <div class="menu" id="menu">
+    <!-- <div class="menu" id="menu">
         <label><b>Menu</b></label>
         <h1>Our Restuarant Food Menus</h1>
-        <label class="submenu">Breakfast</label>
-        <img src="./Images/Idly.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Dosa.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Poori.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/pongal.jpg" alt="" height="200px" width="200px">
-        <label class="submenu">Dinner</label>
-        <img src="./Images/Chappathi.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Parota.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Chilli Parotta.jpg" alt="" height="200px" width="170px">
+        <h3 class="submenu">Tiffin Items</h3>
+<section class="menu-item">
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="./Images/Idly.jpg" alt="" height="200px" width="200px"><br>
+        <p>Idly</p><br>
+        <p>Rs.10/-</p>
+      </div>
     </div>
-    <div class="lunch">
-        <label>Lunch</label>
-        <img src="./Images/Biriyani.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Chicken gravy.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Chicken 65.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Chicken lollipop.jpg" alt="" height="200px" width="200px">
-        <img src="./Images/Mutton chukka.jpg" alt="" height="180px" width="200px">
-        <img src="./Images/Chicken rice.jpg" alt="" height="180px" width="180px">
-        <img src="./Images/Chicken noodles.jpg" alt="" height="180px" width="180px">
+  
+    <div class="column">
+      <div class="card">
+        <img src="./Images/Dosa.jpg" alt="" height="200px" width="200px"><br>
+        <p>Dosa</p><br>
+        <p>Rs.45/-</p>
+      </div>
     </div>
-    <!--Table Reservation -->
-    <div class="Reservation" id="booktable">
+    
+    <div class="column">
+      <div class="card">
+        <img src="./Images/Poori.jpg" alt="" height="200px" width="200px"><br>
+        <p>Poori (Set 1)</p><br>
+        <p>Rs.40/-</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="./Images/pongal.jpg" alt="" height="200px" width="200px"><br>
+        <p>Pongal</p><br>
+        <p>Rs.50/-</p>
+      </div>
+    </div>
+    <h3 class="submenu">Dinner Items</h3>
+  <div class="dinner">
+    <div class="column">
+      <div class="card">
+        <img src="./Images/Chappathi.jpg" alt="" height="200px" width="200px"><br>
+        <p>Chappathi(1 Set)</p><br>
+        <p>Rs.30/-</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="./Images/Parota.jpg" alt="" height="200px" width="200px"><br>
+        <p>Parota(1 Set)</p><br>
+        <p>Rs.30/-</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="./Images/Chilli Parotta.jpg" alt="" height="200px" width="170px"><br>
+        <p>Chilli Parota</p><br>
+        <p>Rs.40/-</p>
+      </div>
+    </div> 
+  </div>
+</div>
+</section>
+</div>
+
+<section class="lunch">
+  <h3 class="submenu">Lunch</h3>
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Biriyani.jpg" alt="" height="200px" width="200px">
+      <p>Biriyani</p><br>
+      <p>Rs.120/-</p>
+    </div>
+  </div> 
+ 
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Chicken gravy.jpg" alt="" height="200px" width="200px">
+      <p>Chicken Gravy</p><br>
+      <p>Rs.150/-</p>
+    </div>
+  </div> 
+
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Chicken 65.jpg" alt="" height="200px" width="200px">
+      <p>Chicken 65</p><br>
+      <p>Rs.100/-</p>
+    </div>
+  </div> 
+
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Chicken lollipop.jpg" alt="" height="200px" width="200px">
+      <p>Chicken Lollipop</p><br>
+      <p>Rs.180/-</p>
+    </div>
+  </div> 
+
+<div class="lunch_continue">  
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Mutton chukka.jpg" alt="" height="180px" width="200px">
+      <p>Mutton Chukka</p><br>
+      <p>Rs.230/-</p>
+    </div>
+  </div> 
+    
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Chicken rice.jpg" alt="" height="180px" width="180px">
+      <p>Chicken Rice</p><br>
+      <p>Rs.200/-</p>
+    </div>
+  </div> 
+
+  <div class="column">
+    <div class="card">
+      <img src="./Images/Chicken noodles.jpg" alt="" height="180px" width="180px">
+      <p>Chicken Noodles</p><br>
+      <p>Rs.200/-</p>
+    </div>
+  </div> 
+</div>
+</section> -->
+
+<!--Table Reservation -->
+
+    <!-- <div class="Reservation" id="booktable">
         <label>Reservation</label>
         <form>
             <h2>Book Your Table</h2>
-            <input type="text" placeholder="Enter your name">
+            <input type=/"text" placeholder="Enter your name">
             <input type="number" placeholder="Phone Number">
             <input type="email" placeholder="Enter your mail id">
             <input type="number" placeholder="Number of guests">
-            <!-- <label>Date</label> -->
             <input type="date">
             <input type="time">
-            <button id="booktable">Book Table</button>
+            <button id="booktable" type="button" onclick="fun();">Book Table</button>
         </form>
     </div>
-    <!-- Contact -->
-    <div class="Contact" id="contact">
-        <label>Contact</label>
+ -->
+
+  <!-- Contact -->
+
+    <!-- <div class="Contact" id="contact">
+        <h2>Contact</h2>
         <p><b>Location : 159/c1, Teppakulam W St, corner, Kamarajar Salai, Madurai, Tamil Nadu - 625009<br><br><br>
             Closing Time: 11:30 PM<br><br><br>
             Phone : 078458 33047<br><br><br>
             Online Order : <a href="https://www.swiggy.com/">swiggy.com</a></b></p>
     </div>
 </body>
-</html>
+</html> --> 
