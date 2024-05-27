@@ -1,353 +1,303 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* -----------------Base---------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins',sans-serif;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+:root{
+  --dark-green: #112a34;
+  --green-color: #004047;
+  --white-color: #fff;
+}
+::selection{
+  background: var(--green-color);
+  color: var(--white-color);
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+html{
+  font-size: 90%;
+}
+section .home{
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+}
+.home .home-box{
+  width: 97%;
+  height: 600px;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("./Images/Home\ BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: .5rem;
+}
+.home .home-box nav{
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2));
+  backdrop-filter: blur(1px);
+  border-radius: .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  z-index: 10;
+  position: relative;
+}
+.home .home-box nav .logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.home .home-box nav .logo .bars{
+  font-size: 1.35rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.home .home-box nav .logo .bars:hover{
+  color: var(--green-color);
+}
+.home .home-box nav .logo h3{
+  color: var(--white-color);
+  font-weight: 400;
+}
+.home .home-box nav .menu .close{
+  display: none;
+}
+.home .home-box nav .menu ul{
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.home .home-box nav .menu ul li a{
+  color: var(--white-color);
+  font-weight: 400;
+}
+.home .home-box nav .menu ul li a:hover{
+  color: rgb(255 255 255/70%);
+}
+.home .home-box nav .signup-login{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.home .home-box nav .signup-login a{
+  color: var(--white-color);
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+}
+.home .home-box nav .signup-login a:last-child{
+  background: var(--green-color);
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+}
+.home .home-box nav .signup-login a:hover{
+  color: rgb(255 255 255/70%);
+}
+.home .home-box nav .signup-login a:last-child:hover{
+  color: var(--white-color);
+  background-color: #02636e;
+}
+.home .home-box .content{
+  width: 100%;
+  height: calc(100% - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0, -65px);
+}
+.home .home-box .content h5{
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.home .home-box .content h1{
+  font-size: 4rem;
+  max-width: 50rem;
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.home .home-box .content p{
+  color: #eee;
+  font-weight: 300;
+  max-width: 40rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.home .home-box .content .search{
+  width: 100%;
+  max-width: 38rem;
+  height: 45px;
+  background: var(--white-color);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  padding: .3rem;
+}
+.home .home-box .content .search i{
+  color: rgba(0,0,0,.5);
+  margin: 0.6rem;
+}
+.home .home-box .content .search input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 400;
+}
+.home .home-box .content .search button{
+  height: 100%;
+  padding: 0 1rem;
+  border-radius: inherit;
+  background: var(--green-color);
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+.home .home-box .content .search button:hover{
+  background-color: #02636e;
+}
 
+/* Travel section starts here */
+.travel .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 0;
+}
+.travel .container .box{
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 30rem;
+}
+.travel .container .box h4{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  font-size: 600;
+}
+.travel .container .box p{
+  color: #666;
+  line-height: 2rem;
+}
 
+/* Travel section ends here */
 
-
-
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box; 
-    list-style: none;
-    text-decoration: none;  
+/* Media section starts here */
+@media (max-width:1020px){
+  html{
+    font-size: 85%;
   }
-  header {
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+  section{
+    padding: 0 2rem;
+  }
+}
+@media (max-width:910px){
+  .home .home-box nav{
+    padding: 0 1rem;
+  }
+  .home .home-box nav .menu ul{
+    gap: 2rem;
+  }
+}
+@media (max-width:767px){
+  .home .home-box nav .menu{
+    display: none;
+  }
+  .home .home-box nav .logo .bars{
+    display: block;
+  }
+  .home .home-box nav .menu.active{
+    display: block;
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0/90%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 18px 90px;
-    margin-right: 50px;
-    background-color: rgba(255, 103, 128, 0.5);
-    border: 2px solid rgba(241, 10, 10, 0.5);
+    padding: 0 3rem;
   }
-  .logo {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: aqua;
-    font-family: "Great Vibes", cursive;
-    font-size: 30px;
-    cursor: default;
-    margin-left: 40px;
-    text-decoration: underline;
-  }
-  .navbar {
-    display: flex;
-  } 
-  .navbar a {
-    font-size: 1.2rem;
-    padding: 10px 30px; 
-    color: white;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  .navbar a:hover {
-     color: aqua;
-  }
-  button{
-    font-size: 25px;
-    margin: 5px 10px 10px 20px;
-    padding: 10px 10px 10px 10px;
+  .home .home-box nav .menu .close{
+    display: block;
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
     cursor: pointer;
-    background-color: transparent;
-    border-radius: 10px;
-    border-color: violet;
-    font-weight: 20px;
+    color: var(--white-color);
+    font-size: 2rem;
   }
-  button a{
-    font-family: "Great Vibes", cursive;
-    color: aqua;
+  .home .home-box nav .menu .close:hover{
+    color: rgba(255 255 255/40%);
   }
-  button:hover{
-    background-color: #ffff;
+  .home .home-box nav .menu ul{
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 1rem;
   }
-  .title{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, .5)),url("./Images/Food\ bg2.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 700px;
+  .home .home-box nav .menu ul:hover li a{
+    color: rgba(255 255 255/40%);
   }
-  .title h1{
-        position: relative;
-        top: 250px;
-        right: 200px;
-        justify-content: center;
-        align-items: center;
-        padding-left: 350px;
-        text-transform: uppercase;
-        color: yellow;
-        font-family: "Sedan SC", serif;
-        font-weight: 800;
-        font-size: 40px;
+  .home .home-box nav .menu ul li a:hover{
+    color: var(--white-color);
   }
-  .title button{
-    position: relative;
-    top: 300px;
-    margin-left: 380px;
-    margin-top: 10px;
-    background-color: red;
-    color: aqua;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 5px 40px;
+  .home .home-box .content{
+    padding: 2rem;
   }
-  .title button:hover{
-    background-color: azure;
-    color: purple;
+  .travel .container{
+    flex-direction: column;
+    padding: 4rem 0;
+    gap: 4rem;
   }
-  .About{
-    background-image: linear-gradient(rgba(6, 80, 76, 0.5),rgba(241, 8, 106, 0.5)),url("./Images/Restuarant2.jpg");
-    height: 750px;
-    background-size: cover;
+  .travel .container .box{
+    height: 6rem;
   }
-  .About h1{
-    color: white;
-    display: flex;
-    margin-left: 500px;
-    padding-top: 50px;
-    font-size: 35px;
-  }
-  label{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: red;
-    padding: 10px 20px;
-    margin: 0px 550px;
-    font-weight: bold;
-    font-size: 20px;
-    border: 2px solid palevioletred;
-    border-radius: 10px;
-  }
-  .About p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin-top: 30px;
-  }
-  .About img{
-    position: relative;
-    bottom: 450px;
-    left: 50px;
-    margin-left: 500px;
-  }
- .About form{
-    position: relative;
-    top: 150px;
-    width: 300px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, .5);
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
-    word-spacing: 2px;
-  }
-  .About form p{
-    margin-left: 10px;
-  }
-  .About ul{
-    color: #ffff;
-    background-color: rgba(0, 0, 0, .5);
-    position: relative;
-    left: 60%;
-    bottom: 150px;
-    width: 300px;
-    height: 300px;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px;
-    margin-left: 150px;
-    padding-left: 50px;
-    padding-right: 20px;
-    text-align: justify;
-  }
-  .About ul li{
-    font-family: 'Times New Roman', Times, serif;
-    list-style: circle;
-    color: rgb(245, 230, 19);
-  }
-  .menu{
-    background-image: linear-gradient(to top right,rgba(80, 223, 14, 0.5),rgba(0, 0, 0, 0.5),rgba(248, 142, 142,0.5));
-    height: 800px;
-    background-size: cover;
-  }
-  .menu h1{
-    color: red;
-    font-family: "Sedan SC", serif;
-    font-weight: 800;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 30px;
-  }
-  .menu .submenu{
-    color: darkred;
-    font-size: 20px;
-    border: none;
-    margin:10px;
-    text-align: center;
-  }
+}
 
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-   
+@media (max-width: 607px){
+  .home .home-box .content h1{
+    font-size: 2rem;
   }
   
-  /* Remove extra left and right margins, due to padding */
-  /* .row {margin: 0 -5px;} */
-  
-  /* Clear floats after the columns */
-  /* .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .home .home-box .content p{
+    font-size: .8rem;
   }
-   */
-  /* Responsive columns */
-  /* @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  } */
-  
-  /* Style the counter cards */
-  /* .card {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4);
-    padding: 16px;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 2px solid rgb(245, 121, 121);
-    width: 230px;
-    margin-left: 25px;
-    height: 280px;
-  }
-  .card img{
-    border-radius: 100px;
-  }
-  .dinner{
-    margin-left: 250px;
-  }
-  .lunch{
-    background-image: linear-gradient(to top left,rgba(80, 223, 14, 0.5),rgba(0, 0, 0, 0.5),rgba(248, 142, 142,0.5));
-    height: 750px;
-    background-size: cover;
-  }
-  .lunch .column{
-    padding-top: 45px;
-  }
-  .lunch h3{
-    text-align: center;
-    padding-top: 30px;
-    color: darkred;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-  }
-  .lunch_continue{
-    margin-left: 200px;
-  }
-  .Reservation{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./Images/Food\ bg3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-  }
-  .Reservation form{
-    background: linear-gradient(rgba(6, 80, 76, 0.5),rgba(241, 8, 106, 0.5)),url("./Images/Restuarant2.jpg");
-    position: relative;
-    top: 100px;
-    width: 400px;
-    height: 600px;
-    border: 5px solid rgba(128, 27, 27, 0.5);
-    border-radius: 30px;
-    justify-content: center; 
-    margin-left: 150px;
-  }
-  .Reservation h2{
-    color: #ffff;
-    font-family: "Sedan SC", serif;
-    font-size: 25px;
-    margin: 50px 95px 0px;
-  }
-  .Reservation input{
-    height: 40px;
-    width: 80%;
-    margin-left: 40px;
-    margin-top: 30px;
-    padding-left: 15px;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    opacity: 0.5;
-  }
-  .Reservation button{
-    margin-top: 20px;
-    margin-left: 130px;
-    border-color: darkcyan;
-    color: yellow;
-    background-color: rgb(235, 12, 12);
-    font-family: "Great Vibes", cursive;
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .Reservation button:hover{
-    background-color: white;
-    color: black;
-  }
-  .Contact p{
-    color: black;
-    background-image: linear-gradient(rgba(241, 10, 10, 0.5),rgba(241, 102, 9, 0.5));
-    background-size: cover; 
-    height: 400px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-  }
-  .Contact h2{
-    text-align: center;
-    color: red;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  .Contact p a{
-    color: red;
-    text-decoration: underline;
-  }
-  .Contact p a:hover{
-    color: blue;
-  }
-   */ 
+}
+/* Media section ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
