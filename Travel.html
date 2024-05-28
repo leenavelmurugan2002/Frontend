@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Restaurant.css">
+    <link rel="stylesheet" href="./Travel.css">
     <title>Travel</title>
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -23,16 +28,16 @@
 
 <!-- Nav bar starts here -->
 
-<nav class="navbar navbar-expand-lg" id="navbar">
+<nav class="navbar navbar-expand-lg m-0 fixed-top" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./Restaurant.html"><span></span>travel</a>
+    <a class="navbar-brand" href="./Travel.html" id="logo"><span>T</span>ravel</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span><i class="fa-solid fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="./Restaurant.html">Home</a>
+          <a class="nav-link active" href="./Travel.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#book">Book</a>
@@ -60,13 +65,85 @@
 
 <!-- Nav bar ends here -->
 
+<!-- Home section starts here -->
+  <div class="home">
+    <div class="content">
+      <h3>Welcome To World</h3>
+      <h1>Visit<span class="changecontent"></span></h1>
+      <p>discover inspiring destination, create unforgettable memories, and travel with<br><br>confidence - adventure start adventure starts here</p>
+      <a href="#book">Book Place</a>
+
+    </div>
+  </div>
+<!-- Home section ends here -->
+
+<!-----Book section starts here---------->
+  <div class="book" id="book">
+    <div class="container">
+
+      <div class="main-text">
+        <h1><span>B</span>ook</h1>
+      </div>
+
+    <div class="row">
+         
+      <div class="col-md-6 py-3 py-md-0">
+       <div class="card">
+        <img src="./Images/travel-hd.jpg" class="card-img-top" alt="" height="550">
+       </div>
+      </div>
+
+      <div class="col-md-6 py-3 py-md-0">
+       <form action="#">
+        <input type="text" class="form-control" placeholder="Where to" required><br>
+        <input type="text" class="form-control" placeholder="How many" required><br>
+        <input type="date" class="form-control" placeholder="Arrivals" required><br>
+        <input type="date" class="form-control" placeholder="Leaving" required><br>
+        <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
+        <input type="submit" value="Book Now" class="submit" required>
+       </form>
+      </div>
+
+    </div>
+    </div>
+  </div>
+  
+<!-----Book section ends here------------>
 
 
 
+<!-- Packages section starts here----------->
+<section class="packages" id="packages">
+  <div class="container">
+    
+    <div class="main-text">
+      <h1><span>P</span>ackages</h1>
+    </div>
+    
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./Images/UK.jpg" alt="">
+          <div class="card-body">
+            <h3>United Kingdom</h3>
+            <p>The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a country in Northwestern Europe, off the coast of the continental mainland.</p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>8 Nights 9 Days</h6>
+            <h6>Price: <strong>Rs. 2,74,206</strong></h6>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-
+  </div>
+</section>
+<!-- Packages section ends here------------->
 
 
 
@@ -91,9 +168,12 @@
 
 
    
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
   <!---------------Home Section Starts Here------------------->
-  <section class="home">
+  <!-- <section class="home">
     <div class="home-box">
       <nav>
         <div class="logo bars">
@@ -101,9 +181,9 @@
             <i class="fa fa-bars"></i>
           </div>
           <h3>Travel</h3>
-        </div>
+        </div> -->
   <!-------------------Menu------------------------------------->
-        <div class="menu">
+        <!-- <div class="menu">
           <div class="close">
             <i class="fa fa-close"></i>
           </div>
@@ -133,11 +213,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!---------------Home Section Ends Here--------------------->
   
   <!--------------------Travel Section Starts Here--------------->
-     <section class="travel">
+     <!-- <section class="travel">
       <div class="container">
         <div class="box">
           <img src="./Images/Planning.jpg" alt="" height="200px" width="200px">
@@ -163,11 +243,11 @@
           </div>
         </div>
       </div>
-     </section>
+     </section> -->
   <!--------------------Travel Section Ends Here----------------->
   
   <!--------------------Destination section starts here---------->
-    <section class="destinations">
+    <!-- <section class="destinations">
       <h4 class="label">destinations</h4>
       <div class="container">
         <div class="container-box">
@@ -175,12 +255,12 @@
           <div class="content"></div>
         </div>
       </div>
-    </section>
+    </section> -->
   <!--------------------Destination section starts here---------->
   
   
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script scr="Restaurant.js"></script>
 
 </body>
@@ -188,4 +268,4 @@
 
 
 
-
+ -->
